@@ -1,4 +1,7 @@
 {
+ "name": "Cobertura Roland Garros",
+ "display": "fullscreen",
+ "background_color": "#053715",
  "icons": [
   {
    "type": "image/png",
@@ -36,9 +39,6 @@
    "src": "misc/icon64.png"
   }
  ],
- "name": "Cobertura Roland Garros",
- "display": "fullscreen",
  "start_url": "index.htm?installed=true",
- "theme_color": "#053715",
- "background_color": "#053715"
+ "theme_color": "#053715"
 }
