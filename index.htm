@@ -6,31 +6,25 @@
     <meta name="viewport" id="metaViewport" content="user-scalable=no, initial-scale=1, width=device-width, viewport-fit=cover" data-tdv-general-scale="0.5"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <script src="lib/tdvplayer.js?v=1683928109078"></script>
-    <link rel="shortcut icon" href="favicon.ico?v=1683928109078">
-	<link rel="icon" sizes="48x48 32x32 16x16" href="favicon.ico?v=1683928109078">
-	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="misc/icon180.png?v=1683928109078">
-	<link rel="icon" type="image/png" sizes="16x16" href="misc/icon16.png?v=1683928109078">
-	<link rel="icon" type="image/png" sizes="32x32" href="misc/icon32.png?v=1683928109078">
-	<link rel="icon" type="image/png" sizes="192x192" href="misc/icon192.png?v=1683928109078">
-	<link rel="manifest" href="manifest.json?v=1683928109078">
-	<meta name="msapplication-TileColor" content="#053414">
+    <script src="lib/tdvplayer.js?v=1684230302095"></script>
+    <link rel="shortcut icon" href="favicon.ico?v=1684230302095">
+	<link rel="icon" sizes="48x48 32x32 16x16" href="favicon.ico?v=1684230302095">
+	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="misc/icon180.png?v=1684230302095">
+	<link rel="icon" type="image/png" sizes="16x16" href="misc/icon16.png?v=1684230302095">
+	<link rel="icon" type="image/png" sizes="32x32" href="misc/icon32.png?v=1684230302095">
+	<link rel="icon" type="image/png" sizes="192x192" href="misc/icon192.png?v=1684230302095">
+	<link rel="manifest" href="manifest.json?v=1684230302095">
+	<meta name="msapplication-TileColor" content="#053715">
 	<meta name="msapplication-config" content="browserconfig.xml">
-	<link rel="preload" href="locale/pt.txt?v=1683928109078" as="fetch" crossorigin="anonymous"/>
-	<link rel="preload" href="script.js?v=1683928109078" as="script"/>
-	<link rel="preload" href="media/panorama_0B3AFD45_071C_824D_4189_8E484F3F6725_0/r/2/0_0.jpg?v=1683928109078" as="image"/>
-	<link rel="preload" href="media/panorama_0B3AFD45_071C_824D_4189_8E484F3F6725_0/l/2/0_0.jpg?v=1683928109078" as="image"/>
-	<link rel="preload" href="media/panorama_0B3AFD45_071C_824D_4189_8E484F3F6725_0/u/2/0_0.jpg?v=1683928109078" as="image"/>
-	<link rel="preload" href="media/panorama_0B3AFD45_071C_824D_4189_8E484F3F6725_0/d/2/0_0.jpg?v=1683928109078" as="image"/>
-	<link rel="preload" href="media/panorama_0B3AFD45_071C_824D_4189_8E484F3F6725_0/f/2/0_0.jpg?v=1683928109078" as="image"/>
-	<link rel="preload" href="media/panorama_0B3AFD45_071C_824D_4189_8E484F3F6725_0/b/2/0_0.jpg?v=1683928109078" as="image"/>
+	<link rel="preload" href="locale/pt.txt?v=1684230302095" as="fetch" crossorigin="anonymous"/>
+	<link rel="preload" href="script.js?v=1684230302095" as="script"/>
 	<script src="scorm.js" type="text/javascript"></script>
 	<meta name="description" content="Virtual Tour"/>
-	<meta name="theme-color" content="#053414"/>
-    <script src="script.js?v=1683928109078"></script>
+	<meta name="theme-color" content="#053715"/>
+    <script src="script.js?v=1684230302095"></script>
     <script type="text/javascript">
         var tour;
-        var devicesUrl = {"general":"script_general.js?v=1683928109078","mobile":"script_mobile.js?v=1683928109078"};
+        var devicesUrl = {"general":"script_general.js?v=1684230302095","mobile":"script_mobile.js?v=1684230302095"};
 
         (function()
         {
@@ -73,9 +67,9 @@
 
             var settings = new TDV.PlayerSettings();
             settings.set(TDV.PlayerSettings.CONTAINER, document.getElementById('viewer'));
-            settings.set(TDV.PlayerSettings.WEBVR_POLYFILL_URL, 'lib/WebVRPolyfill.js?v=1683928109078');
-            settings.set(TDV.PlayerSettings.HLS_URL, 'lib/Hls.js?v=1683928109078');
-            settings.set(TDV.PlayerSettings.QUERY_STRING_PARAMETERS, 'v=1683928109078');
+            settings.set(TDV.PlayerSettings.WEBVR_POLYFILL_URL, 'lib/WebVRPolyfill.js?v=1684230302095');
+            settings.set(TDV.PlayerSettings.HLS_URL, 'lib/Hls.js?v=1684230302095');
+            settings.set(TDV.PlayerSettings.QUERY_STRING_PARAMETERS, 'v=1684230302095');
 
             tour = new TDV.Tour(settings, devicesUrl);
             tour.bind(TDV.Tour.EVENT_TOUR_INITIALIZED, onVirtualTourInit);
@@ -248,7 +242,7 @@
             showPreloader();
 			loadTour();
 			pauseTour();
-			setTimeout(function(){ console.log("timeout", tour.isInitialized); if(tour.isInitialized) { disposePreloader(); } resumeTour(); }, 8000);
+			setTimeout(function(){ console.log("timeout", tour.isInitialized); if(tour.isInitialized) { disposePreloader(); } resumeTour(); }, 5000);
         }
 
         
@@ -338,15 +332,14 @@
     <style type="text/css">
         html, body { height:100%; width:100%; height:100vh; width:100vw; margin:0; padding:0; overflow:hidden; }
         .fill-viewport { position:fixed; top:0; left:0; right:0; bottom:0; padding:0; margin:0; overflow: hidden; }
-        .fill-viewport.landscape-left { left: env(safe-area-inset-left); }
-		.fill-viewport.landscape-right { right: env(safe-area-inset-right); }
+        
         #viewer { z-index:1; }
-        #preloadContainer { z-index:2; opacity:0; background-color:rgba(5,52,20,1); transition: opacity 0.5s; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; -o-transition: opacity 0.5s;}
+        #preloadContainer { z-index:2; opacity:0; background-color:rgba(5,55,21,1); transition: opacity 0.5s; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; -o-transition: opacity 0.5s;}
     </style>
-    <link rel="stylesheet" href="fonts.css?v=1683928109078">
+    <link rel="stylesheet" href="fonts.css?v=1684230302095">
 </head>
 <body>
-    <div id="preloadContainer" class="fill-viewport"><div style="z-index: 4; position: absolute; background-size: contain; background-image: url('loading/HTMLImage_1497FA39_0A7D_13DD_41A1_9AFB77B680A7.png'); background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 0%; top: 0%; width: 100.00%; height: 100.00%" ></div></div>
+    <div id="preloadContainer" class="fill-viewport"><div style="z-index: 4; position: absolute; background-size: contain; background-image: url('loading/HTMLImage_1A765BA4_2051_E05B_41A2_B15FD19E550C.png'); background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 0%; top: 0%; width: 100.00%; height: 100.00%" ></div></div>
     <div id="viewer" class="fill-viewport"></div>
 </body>
 </html>
