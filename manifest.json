@@ -37,8 +37,8 @@
   }
  ],
  "name": "Cobertura Roland Garros",
- "display": "fullscreen",
  "background_color": "#053715",
+ "display": "fullscreen",
  "start_url": "index.htm?installed=true",
  "theme_color": "#053715"
 }
